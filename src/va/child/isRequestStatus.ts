@@ -1,11 +1,7 @@
 import {duckfaults, makeDuck} from "ducktyper";
 import { requestStatus } from "../../types/child/requestStatus.enum";
+import { makeEnumVal } from "../makeEnumVal";
 
-export const isRequestStatus = duckfaults(makeDuck((val)=>{
-    return val === requestStatus.ACCEPTED ||
-           val === requestStatus.INPROGRESS ||
-           val === requestStatus.NONE ||
-           val === requestStatus.REJECTED;
-}), {
+export const isRequestStatus = duckfaults(makeDuck(makeEnumVal(requestStatus)), {
     message: "Not a valid request status",
 });
