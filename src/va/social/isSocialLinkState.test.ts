@@ -1,5 +1,5 @@
 import {isSocialLinkState} from "./isSocialLinkState";
-import { socialLinkState } from "../../types/user/socialLinkState";
+import { socialLinkState } from "../../types/social/socialLinkState";
 
 test("this is testing a basic test of isSocialLinkState", ()=>{
     const vals = Object.values(socialLinkState);
