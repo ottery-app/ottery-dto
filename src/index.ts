@@ -27,6 +27,7 @@ export * from "./dtos/social/userSocialStatusDto";
 export * from "./dtos/social/messageDto";
 export * from "./dtos/notification/notification.dto";
 export * from "./dtos/singleItem/idDto";
+export * from "./dtos/singleItem/string.dto";
 
 //VA
 export * from "./va/auth/auth";

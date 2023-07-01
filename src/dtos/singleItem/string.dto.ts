@@ -1,6 +1,6 @@
 import {duckorate, DuckDto, isString} from "ducktyper";
 
-export class IdDto extends DuckDto {
+export class StringDto extends DuckDto {
     @duckorate(isString)
-    id:string;
+    string:string;
 }
