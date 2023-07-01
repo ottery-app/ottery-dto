@@ -9,5 +9,5 @@ export class IdDto extends DuckDto {
 
 export class IdArrayDto extends DuckDto {
     @duckorate(makeDuck([isId]))
-    id:id[]
+    ids:id[]
 }
