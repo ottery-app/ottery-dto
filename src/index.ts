@@ -24,11 +24,11 @@ export * from "./dtos/social/socialLinkHistoryDto";
 export * from "./dtos/social/socialLinkDto";
 export * from "./dtos/social/updateLinkDto";
 export * from "./dtos/social/userSocialStatusDto";
-export * from "./dtos/social/messageDto";
 export * from "./dtos/notification/notification.dto";
 export * from "./dtos/singleItem/idDto";
 export * from "./dtos/singleItem/string.dto";
 export * from "./dtos/chat/MakeChat.dto";
+export * from "./dtos/chat/messageDto";
 
 //VA
 export * from "./va/auth/auth";
