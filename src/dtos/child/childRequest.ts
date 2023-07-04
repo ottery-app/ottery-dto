@@ -1,5 +1,5 @@
 import { id } from "../../types/auth/id";
-import {duckorate, DuckDto} from 'ducktyper';
+import {duckorate, DuckDto, makeDuck} from 'ducktyper';
 import { isId } from "../../va/auth/auth";
 import { isRequestStatus } from "../../va/child/isRequestStatus";
 import { isRequestType } from "../../va/child/isRequestType";
@@ -29,7 +29,7 @@ export class ChildRequestDto extends DuckDto {
     status?: requestStatus;
 
     @duckorate(isRequestType, {
-        message: "Not a vale request type",
+        message: "Not a valid request type",
         allowUndefined: true,
     })
     type?: requestType;
