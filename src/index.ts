@@ -2,7 +2,7 @@
 export * from "./ports/classifyDto";
 export * from "./ports/classifyWithDto";
 export * from "./ports/dtoAssign";
-export * from "./ports/useDtoAsArr";
+export * from "./ports/useValidatorAsArr";
 
 //DTO
 export * from "./dtos/child/child";
