@@ -7,7 +7,7 @@ export class MakeChatDto extends DuckDto {
     @duckorate(isString, {
         message: "Not a valid name"
     })
-    name:name;
+    name:name='unnamed';
 
     @duckorate(makeDuck([isId]), {
         message: "Users must be a list of user ids",
