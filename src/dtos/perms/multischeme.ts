@@ -12,5 +12,5 @@ export class MultiSchemeDto extends DuckDto {
     @duckorate(isSchemaName, {
         message: "Not a valid schema name",
     })
-    ref: String;
+    ref: string;
 }
