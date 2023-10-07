@@ -1,5 +1,5 @@
 {
-  "name": "ottery-dto",
+  "name": "@ottery/ottery-dto",
   "version": "0.0.6",
   "description": "List of ottery DTOS",
   "main": "lib/index.js",
@@ -40,5 +40,8 @@
   },
   "dependencies": {
     "ducktyper": "^5.1.4"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
