@@ -7,7 +7,7 @@ import {DuckDto} from "ducktyper";
  * @param input any
  * @returns true if the object is either a class that extends DuckDto or if it is an instance of DuckDto.
  */
-export const extendsDuckDto = (input: any): boolean => {
+export const isDto = (input: any): boolean => {
     if (typeof input === "function") {
       // Check if the input is a class that extends DuckDto
       return input.prototype instanceof DuckDto;
