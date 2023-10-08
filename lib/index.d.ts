@@ -43,7 +43,7 @@ export * from "./va/person/names";
 export * from "./va/url/url";
 export * from "./va/schema/name";
 export * from "./va/social/isSocialLinkState";
-export * from "./va/extendsDuckDto";
+export * from "./va/isDto";
 export * from "./va/notification/isNotificationType";
 export * from "./types/auth/activationCode";
 export * from "./types/auth/id";
