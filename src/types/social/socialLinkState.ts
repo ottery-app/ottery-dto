@@ -1,5 +1,6 @@
 export enum socialLinkState {
-    NONE = "none",
-    REQUESTED = "requested",
-    ACCEPTED = "accepted",
+  NONE = "none",
+  REQUESTED = "requested",
+  ACCEPTED = "accepted",
+  CLOSE_FRIEND = "close_friend",
 }
