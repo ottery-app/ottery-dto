@@ -30,6 +30,7 @@ export * from "./dtos/singleItem/idDto";
 export * from "./dtos/singleItem/string.dto";
 export * from "./dtos/chat/MakeChat.dto";
 export * from "./dtos/chat/messageDto";
+export * from "./dtos/chat/Chat.dto";
 
 //VA
 export * from "./va/auth/auth";
