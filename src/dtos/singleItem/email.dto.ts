@@ -4,5 +4,5 @@ import { isEmail } from "../../va/contact/email";
 
 export class EmailDto extends DuckDto {
     @duckorate(isEmail)
-    string:email;
+    email:email;
 }
