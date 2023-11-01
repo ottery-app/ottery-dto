@@ -31,6 +31,7 @@ export * from "./dtos/singleItem/string.dto";
 export * from "./dtos/chat/MakeChat.dto";
 export * from "./dtos/chat/messageDto";
 export * from "./dtos/chat/Chat.dto";
+export * from "./dtos/singleItem/email.dto";
 
 //VA
 export * from "./va/auth/auth";
