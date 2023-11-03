@@ -20,6 +20,7 @@ export * from "./dtos/user/user";
 export * from "./dtos/user/activate";
 export * from "./dtos/user/login";
 export * from "./dtos/user/new";
+export * from "./dtos/user/resetPassword";
 export * from "./dtos/locatables/locatableStamp";
 export * from "./dtos/social/socialLinkHistoryDto";
 export * from "./dtos/social/socialLinkDto";
