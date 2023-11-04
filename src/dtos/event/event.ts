@@ -112,18 +112,6 @@ export class CreateEventDto extends DuckDto {
     })
     recurrence: recurrence[];
 
-    @duckorate(makeDuck([CustomFormFieldDto]), {
-        message: "Issue in the volenteer signup form",
-        allowEmptyArray: true,
-    })
-    volenteerSignUp: CustomFormFieldDto[];
-
-    @duckorate(makeDuck([CustomFormFieldDto]), {
-        message: "Issue in the attendee signup form",
-        allowEmptyArray: true,
-    })
-    attendeeSignUp: CustomFormFieldDto[];
-
     @duckorate(isCost)
     cost: currency;
 

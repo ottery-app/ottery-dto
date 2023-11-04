@@ -3,13 +3,14 @@ import { notification } from "../../types/notification/notification.enum";
 import { time } from "../../types/time/time";
 import { isDate } from "../../va/date/date";
 import { isNotificationType } from "../../va/notification/isNotificationType";
-import { MultiSchemeDto } from "../perms/multischeme";
+import { id } from "../../types/auth/id";
+import { isId } from "../../va/auth/auth";
 
 export class NotificationDto extends DuckDto {
-    @duckorate(dtoToIsDuck(MultiSchemeDto), {
+    @duckorate(isId, {
         message: "not a valid sender",
     })
-    sender:MultiSchemeDto;
+    sender:id;
 
     @duckorate(isNotificationType)
     type: notification;
