@@ -62,7 +62,6 @@ export * from "./types/child/requestStatus.enum";
 export * from "./types/child/requestType.enum";
 export * from "./types/contact/email";
 export * from "./types/currency/currency";
-export * from "./types/file/image";
 export * from "./types/gender/gender";
 export * from "./types/geo/location";
 export * from "./types/time/recurrence";

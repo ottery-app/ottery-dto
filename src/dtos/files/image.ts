@@ -1,4 +1,9 @@
 import { FileDto } from "./file";
+import {duckorate, isNumber} from "ducktyper";
 
-//TODO custom error msg
-export class ImageDto extends FileDto {}
+export class ImageDto extends FileDto {
+    @duckorate(isNumber, {
+        message: "Not a valid aspect ratio"
+    })
+    src: string;
+}

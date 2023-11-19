@@ -13,7 +13,7 @@ export class CreateChildDto extends DuckDto {
         message: "Not a valid Image",
         allowUndefined:false,
     })
-    pfp:image;
+    pfp:ImageDto;
     @duckorate(isFirstName)
     firstName:name;
     @duckorate(isMiddleName)
