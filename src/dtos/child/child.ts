@@ -6,7 +6,6 @@ import { name } from "../../types/user/name";
 import { time } from "../../types/time/time";
 import { gender } from "../../types/gender/gender";
 import { isDate } from "../../va/date/date";
-import { image } from "../../types/file/image";
 
 export class CreateChildDto extends DuckDto {
     @duckorate(dtoToIsDuck(ImageDto), {

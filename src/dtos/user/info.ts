@@ -2,7 +2,6 @@ import { name } from "../../types/user/name";
 import {duckorate, isString, DuckDto, dtoToIsDuck} from "ducktyper";
 import { UserDto } from "./user";
 import { ImageDto } from "../files/image";
-import { image } from "../../types/file/image";
 import { id } from "../../types/auth/id";
 import { isId } from "../../va/auth/auth";
 
