@@ -5,5 +5,5 @@ export class ImageDto extends FileDto {
     @duckorate(isNumber, {
         message: "Not a valid aspect ratio"
     })
-    src: string;
+    aspectRatio: number;
 }
