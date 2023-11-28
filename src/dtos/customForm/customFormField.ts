@@ -1,4 +1,5 @@
-import {duckorate, isString, isObject, isBoolean, DuckDto} from "ducktyper";
+import {duckorate, isString, isBoolean, DuckDto} from "ducktyper";
+import { inputType } from "../../types/input/input.enums";
 
 //TODO add typing and specify the validators to something more specific then string
 export class CustomFormFieldDto extends DuckDto {
@@ -12,7 +13,7 @@ export class CustomFormFieldDto extends DuckDto {
         allowEmpty: false,
         message: 'Not a valid field type',
     })
-    type: string;
+    type: inputType;
 
     @duckorate(isString, {
         allowEmpty: false,
