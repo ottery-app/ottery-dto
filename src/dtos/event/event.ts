@@ -9,7 +9,7 @@ import { isDate } from "../../va/date/date";
 import { isRecurrence } from "../../va/date/ical";
 import { isAddress } from "../../va/geo/address";
 import { isCost } from "../../va/money/money";
-import { CustomFormFieldDto } from "../customForm/customFormField";
+import { CustomFormFieldDto } from "../form/formField";
 
 export class EventDto extends DuckDto {
     @duckorate(isString, {

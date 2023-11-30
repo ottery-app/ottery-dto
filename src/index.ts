@@ -7,8 +7,8 @@ export * from "./ports/validateAsArr";
 //DTO
 export * from "./dtos/child/child";
 export * from "./dtos/child/childRequest";
-export * from "./dtos/customForm/customFormField";
-export * from "./dtos/customForm/dataField";
+export * from "./dtos/form/formField";
+export * from "./dtos/form/dataField";
 export * from "./dtos/event/event";
 export * from "./dtos/files/file";
 export * from "./dtos/files/image";
