@@ -51,6 +51,7 @@ export * from "./va/schema/name";
 export * from "./va/social/isSocialLinkState";
 export * from "./va/isDto";
 export * from "./va/notification/isNotificationType";
+export * from "./va/contact/phone";
 
 //TYPES
 export * from "./types/auth/activationCode";
