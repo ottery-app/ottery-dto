@@ -72,3 +72,4 @@ export * from "./types/user/name";
 export * from "./types/social/socialLinkState";
 export * from "./types/notification/notification.enum";
 export * from "./types/input/input.enums";
+export * from "./types/event/tempzone.enum";
