@@ -24,13 +24,11 @@ export class ChildRequestDto extends DuckDto {
 
     @duckorate(isRequestStatus, {
         message: "Not a valid child",
-        allowUndefined: true,
     })
-    status?: requestStatus;
+    status: requestStatus;
 
     @duckorate(isRequestType, {
         message: "Not a valid request type",
-        allowUndefined: true,
     })
-    type?: requestType;
+    type: requestType;
 }
