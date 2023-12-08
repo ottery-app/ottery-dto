@@ -18,6 +18,11 @@ export class ChildRequestDto extends DuckDto {
     event: id;
 
     @duckorate(isId, {
+        message: "Not a valid caretaker"
+    })
+    caretaker: id;
+
+    @duckorate(isId, {
         message: "Not a valid child"
     })
     child: id;
