@@ -1,5 +1,4 @@
-import {duckorate, DuckDto, makeDuck, isString, dtoToIsDuck} from "ducktyper";
-import { name } from "../../types/user/name";
+import {duckorate, DuckDto, makeDuck, dtoToIsDuck} from "ducktyper";
 import { id } from "../../types/auth/id";
 import { isId } from "../../va/auth/auth";
 import { AttendanceEntryDto } from "./AttendanceEntry.dto";
@@ -13,9 +12,9 @@ export class AttendanceDto extends DuckDto {
     event:id;
 
     @duckorate(isId, {
-        message: "Not a valid attendee id"
+        message: "Not a valid child id"
     })
-    attendee:id;
+    child:id;
 
     @duckorate(makeDuck([dtoToIsDuck(AttendanceEntryDto)]))
     entries: AttendanceEntryDto[];
