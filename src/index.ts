@@ -31,6 +31,8 @@ export * from "./dtos/chat/messageDto";
 export * from "./dtos/chat/Chat.dto";
 export * from "./dtos/singleItem/email.dto";
 export * from "./dtos/invite/AcceptGuardianshipDto";
+export * from "./dtos/attendance/AttendanceDto.dto";
+export * from "./dtos/attendance/AttendanceEntry.dto";
 
 //VA
 export * from "./va/auth/auth";
@@ -52,6 +54,7 @@ export * from "./va/social/isSocialLinkState";
 export * from "./va/isDto";
 export * from "./va/notification/isNotificationType";
 export * from "./va/contact/phone";
+export * from "./va/attendance/isAttendanceType";
 
 //TYPES
 export * from "./types/auth/activationCode";
@@ -73,3 +76,4 @@ export * from "./types/social/socialLinkState";
 export * from "./types/notification/notification.enum";
 export * from "./types/input/input.enums";
 export * from "./types/event/tempzone.enum";
+export * from "./types/attendance/attendance.types";
