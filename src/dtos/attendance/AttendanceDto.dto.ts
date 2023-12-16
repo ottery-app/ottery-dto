@@ -1,7 +1,9 @@
 import {duckorate, DuckDto, makeDuck, dtoToIsDuck} from "ducktyper";
 import { id } from "../../types/auth/id";
 import { isId } from "../../va/auth/auth";
-import { AttendanceEntryDto } from "./AttendanceEntry.dto";
+import { isDate } from "../../va/date/date";
+import { attendanceType } from "../../types/attendance/attendance.types";
+import { isAttendanceType } from "../../va/attendance/isAttendanceType";
 
 export class AttendanceDto extends DuckDto {
     _id;
@@ -16,6 +18,9 @@ export class AttendanceDto extends DuckDto {
     })
     child:id;
 
-    @duckorate(makeDuck([dtoToIsDuck(AttendanceEntryDto)]))
-    entries: AttendanceEntryDto[];
+    @duckorate(isDate)
+    date: number;
+
+    @duckorate(isAttendanceType)
+    status: attendanceType;
 }

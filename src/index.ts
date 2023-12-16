@@ -32,7 +32,6 @@ export * from "./dtos/chat/Chat.dto";
 export * from "./dtos/singleItem/email.dto";
 export * from "./dtos/invite/AcceptGuardianshipDto";
 export * from "./dtos/attendance/AttendanceDto.dto";
-export * from "./dtos/attendance/AttendanceEntry.dto";
 
 //VA
 export * from "./va/auth/auth";
