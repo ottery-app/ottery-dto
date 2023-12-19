@@ -1,4 +1,4 @@
-import {duckorate, isString, isBoolean, makeDuck, DuckDto} from "ducktyper";
+import {duckorate, isString, isBoolean, makeDuck, DuckDto, dtoToIsDuck} from "ducktyper";
 import { id } from "../../types/auth/id";
 import { currency } from "../../types/currency/currency";
 import { location } from "../../types/geo/location";
@@ -9,6 +9,7 @@ import { isDate } from "../../va/date/date";
 import { isRecurrence } from "../../va/date/ical";
 import { isAddress } from "../../va/geo/address";
 import { isCost } from "../../va/money/money";
+import { FormFieldDto } from "../form/formField";
 
 export class EventDto extends DuckDto {
     @duckorate(isString, {
@@ -113,6 +114,13 @@ export class CreateEventDto extends DuckDto {
 
     @duckorate(isCost)
     cost: currency;
+
+
+    @duckorate(makeDuck([dtoToIsDuck(FormFieldDto)]))
+    volenteerSignUp: FormFieldDto[];
+
+    @duckorate(makeDuck([dtoToIsDuck(FormFieldDto)]))
+    attendeeSignUp: FormFieldDto[];
 
     @duckorate(isBoolean, {
         message: "Publicity must be marked",
