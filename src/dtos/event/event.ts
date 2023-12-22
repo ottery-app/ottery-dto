@@ -10,6 +10,7 @@ import { isAddress } from "../../va/geo/address";
 import { isCost } from "../../va/money/money";
 import { FormFieldDto } from "../form/formField";
 import { isRRule } from "../../va/date/ical";
+import { isUnixDate } from "../../va/date/unix";
 
 export class EventDto extends DuckDto {
     @duckorate(isString, {
@@ -80,6 +81,11 @@ export class CreateEventDto extends DuckDto {
 
     @duckorate(isRRule)
     rrule: recurrence;
+
+    @duckorate(isUnixDate, {
+        message:"Not a valid durration",
+    })
+    durration: time;
 
     @duckorate(isAddress, {
         message: "Not a valid location",
