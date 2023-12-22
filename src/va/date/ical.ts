@@ -8,6 +8,6 @@ export const isRRule = duckfaults(makeDuck((rrule)=>{
       } catch (error) {
         return false; // Invalid RRule string
       }
-}, {
-    message:"Not a valid rrule",
-}))
+}), {
+  message:"Not a valid rrule",
+})
