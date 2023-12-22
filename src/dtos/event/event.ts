@@ -5,7 +5,6 @@ import { location } from "../../types/geo/location";
 import { recurrence } from "../../types/time/recurrence";
 import { time } from "../../types/time/time";
 import { isId } from "../../va/auth/auth";
-import { isDate } from "../../va/date/date";
 import { isAddress } from "../../va/geo/address";
 import { isCost } from "../../va/money/money";
 import { FormFieldDto } from "../form/formField";
@@ -33,6 +32,11 @@ export class EventDto extends DuckDto {
 
     @duckorate(isRRule)
     rrule: recurrence;
+
+    @duckorate(isUnixDate, {
+        message:"Not a valid durration",
+    })
+    durration: time;
 
     @duckorate(isAddress, {
         message: "Not a valid location",
