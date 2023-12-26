@@ -34,6 +34,11 @@ export class EventDto extends DuckDto {
     rrule: recurrence;
 
     @duckorate(isUnixDate, {
+        message:"Not a valid start",
+    })
+    start: time;
+
+    @duckorate(isUnixDate, {
         message:"Not a valid durration",
     })
     durration: time;
@@ -85,6 +90,11 @@ export class CreateEventDto extends DuckDto {
 
     @duckorate(isRRule)
     rrule: recurrence;
+
+    @duckorate(isUnixDate, {
+        message:"Not a valid start",
+    })
+    start: time;
 
     @duckorate(isUnixDate, {
         message:"Not a valid durration",
