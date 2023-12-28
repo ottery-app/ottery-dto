@@ -60,6 +60,12 @@ export class EventDto extends DuckDto {
     })
     attendeeSignUp: id[];
 
+    @duckorate(makeDuck([isId]), {
+        message: "Issue in the guardian signup form",
+        allowEmptyArray: true,
+    })
+    guardianSignUp: id[];
+
     @duckorate(isCost)
     cost: currency;
 
@@ -109,12 +115,14 @@ export class CreateEventDto extends DuckDto {
     @duckorate(isCost)
     cost: currency;
 
-
     @duckorate(makeDuck([dtoToIsDuck(FormFieldDto)]))
     volenteerSignUp: FormFieldDto[];
 
     @duckorate(makeDuck([dtoToIsDuck(FormFieldDto)]))
     attendeeSignUp: FormFieldDto[];
+
+    @duckorate(makeDuck([dtoToIsDuck(FormFieldDto)]))
+    guardianSignUp: FormFieldDto[];
 
     @duckorate(isBoolean, {
         message: "Publicity must be marked",
