@@ -76,3 +76,4 @@ export * from "./types/notification/notification.enum";
 export * from "./types/input/input.enums";
 export * from "./types/event/tempzone.enum";
 export * from "./types/attendance/attendance.types";
+export * from "./types/form/FormFlag.enum";
