@@ -4,6 +4,8 @@ import { UserDto } from "./user";
 import { ImageDto } from "../files/image";
 import { id } from "../../types/auth/id";
 import { isId } from "../../va/auth/auth";
+import { email } from "../../types/contact/email";
+import { isEmail } from "../../va/contact/email";
 
 export class UserInfoDto extends DuckDto {
     @duckorate(isId, {
@@ -30,6 +32,12 @@ export class UserInfoDto extends DuckDto {
     })
     lastName: name;
 
+    @duckorate(isEmail, {
+        message: "Not a valid email",
+        allowEmpty: false,
+    })
+    email: email;
+
     constructor(partial: Partial<UserDto>) {
         super()
         //I AM SORRY I dont want to lie to you. But alas this can be undefined and thats okay.
@@ -37,5 +45,6 @@ export class UserInfoDto extends DuckDto {
         this.firstName = partial.firstName!;
         this.lastName = partial.lastName!;
         this.pfp = partial.pfp!;
+        this.email = partial.email!;
     }
 }
