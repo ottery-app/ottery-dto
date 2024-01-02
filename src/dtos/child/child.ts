@@ -15,8 +15,6 @@ export class CreateChildDto extends DuckDto {
     pfp:ImageDto;
     @duckorate(isFirstName)
     firstName:name;
-    @duckorate(isMiddleName)
-    middleName:name;
     @duckorate(isLastName)
     lastName:name;
     @duckorate(isDate, {
