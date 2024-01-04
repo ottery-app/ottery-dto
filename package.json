@@ -1,6 +1,6 @@
 {
   "name": "@ottery/ottery-dto",
-  "version": "0.0.53",
+  "version": "0.0.54",
   "description": "List of ottery DTOS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

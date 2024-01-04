@@ -1,4 +1,4 @@
-import {duckorate, isString, isBoolean, DuckDto} from "ducktyper";
+import {duckorate, isString, DuckDto} from "ducktyper";
 import { inputType } from "../../types/input/input.enums";
 import { isId } from "../../va/auth/auth";
 import { id } from "../../types/auth/id";
@@ -27,15 +27,5 @@ export class FormFieldDto extends DuckDto {
         allowEmpty: true,
         message: "Not a valid event",
     })
-    forEvent: id;
-
-    // @duckorate(isBoolean, {
-    //     messsage: "must be marked as permanent",
-    // })
-    // permanent: boolean
-
-    // @duckorate(isBoolean, {
-    //     message: "Optinality must be set",
-    // })
-    // optional: boolean;
+    forEvent?: id;
 }
