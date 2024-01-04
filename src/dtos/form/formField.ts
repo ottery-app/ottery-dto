@@ -23,11 +23,11 @@ export class FormFieldDto extends DuckDto {
     })
     note: string;
 
-    // @duckorate(isId, {
-    //     allowEmpty: true,
-    //     message: "Not a valid event",
-    // })
-    // forEvent: id;
+    @duckorate(isId, {
+        allowEmpty: true,
+        message: "Not a valid event",
+    })
+    forEvent: id;
 
     // @duckorate(isBoolean, {
     //     messsage: "must be marked as permanent",
