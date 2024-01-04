@@ -1,4 +1,4 @@
-import {duckorate, isString, DuckDto, makeDuck} from "ducktyper";
+import {duckorate, isString, isBoolean, DuckDto, makeDuck} from "ducktyper";
 import { inputType } from "../../types/input/input.enums";
 import { isId } from "../../va/auth/auth";
 import { id } from "../../types/auth/id";
@@ -23,7 +23,7 @@ export class FormFieldDto extends DuckDto {
     })
     note: string;
 
-    @duckorate(makeDuck((value)=>typeof value === 'boolean'), {
+    @duckorate(isBoolean, {
         message: "Field must have required status",
     })
     required: boolean;
