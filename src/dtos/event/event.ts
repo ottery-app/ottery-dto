@@ -49,6 +49,29 @@ export class EventDto extends DuckDto {
     location: location;
 
     @duckorate(makeDuck([isId]), {
+        message: "Issue in attendee list",
+        allowEmptyArray: true,
+    })
+    attendees: id[];
+    
+    @duckorate(isId, {
+        message: "Issue in leadManager",
+    })
+    leadManager: id;
+
+    @duckorate(makeDuck([isId]), {
+        message: "Issue in manager list",
+        allowEmptyArray: true,
+    })
+    managers: id[];
+
+    @duckorate(makeDuck([isId]), {
+        message: "Issue in volenteer list",
+        allowEmptyArray: true,
+    })
+    volenteers: id[];
+
+    @duckorate(makeDuck([isId]), {
         message: "Issue in the volenteer signup form",
         allowEmptyArray: true,
     })
