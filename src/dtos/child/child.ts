@@ -1,5 +1,5 @@
 import {duckorate, dtoToIsDuck, DuckDto} from "ducktyper";
-import { isFirstName, isLastName, isMiddleName } from "../../va/person/names";
+import { isFirstName, isLastName } from "../../va/person/names";
 import { isGender } from "../../va/person/gender";
 import { ImageDto } from "../files/image";
 import { name } from "../../types/user/name";

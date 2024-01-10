@@ -3,6 +3,7 @@ export * from "./ports/classifyDto";
 export * from "./ports/classifyWithDto";
 export * from "./ports/dtoAssign";
 export * from "./ports/validateAsArr";
+export * from "./ports/trimDto";
 
 //DTO
 export * from "./dtos/child/child";

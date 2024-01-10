@@ -40,7 +40,6 @@ export class UserInfoDto extends DuckDto {
 
     constructor(partial: Partial<UserDto>) {
         super()
-        //I AM SORRY I dont want to lie to you. But alas this can be undefined and thats okay.
         this._id = partial._id!;
         this.firstName = partial.firstName!;
         this.lastName = partial.lastName!;
